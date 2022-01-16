@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./src/static"]
+    },
+    "removeComments": false,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    ".prettierrc.js",
+    ".eslintrc.js",
+    "ecosystem.config.js",
+    "jest.config.js",
+    "jest-setup.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "./etc/**/*"
+  ]
+}
